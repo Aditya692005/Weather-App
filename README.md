@@ -99,7 +99,3 @@ A: The app fetches the latest data on each search or app open.
 ## 📄 License
 
 MIT License. See `LICENSE` for details.
-
----
-
-Let me know if you want this README exported to a file or customized with your app icon and screenshots.
