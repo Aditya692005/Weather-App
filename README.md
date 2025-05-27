@@ -1,42 +1,105 @@
-# Weather-App
-📱 Features
-📍 Location-Based Weather: Automatically detects your current location and displays up-to-date weather data.
+# 🌦️ WeatherNow – Real-Time Weather App
 
-🏙️ City Search: Manually search for any city to view its real-time weather conditions.
+WeatherNow is a simple and clean Android application that displays real-time weather information based on your current location or a city of your choice. It uses the OpenWeatherMap API to fetch accurate weather details like **temperature**, **humidity**, and **wind speed**, along with dynamic weather icons.
 
-🌡️ Weather Details:
+![WeatherNow Screenshot](screenshot.png) <!-- Replace with your screenshot -->
 
-Temperature (°C)
+---
 
-Humidity (%)
+## 📱 Features
 
-Wind Speed (km/h)
+* 📍 **Current Location Weather**
+  Automatically detects your location and displays the latest weather data.
 
-🌐 Uses OpenWeatherMap API for reliable weather updates.
+* 🏙️ **Search by City**
+  Enter any city name to retrieve and view real-time weather updates.
 
-🖼️ Dynamic weather icons fetched from OpenWeatherMap.
+* 🌡️ **Comprehensive Weather Info**
 
-🚀 How It Works
-The app asks for location permission to fetch your current GPS coordinates.
+  * Temperature (°C)
+  * Humidity (%)
+  * Wind Speed (km/h)
+  * Weather icon and description
 
-It then queries the OpenWeatherMap API using those coordinates (or a city name if provided).
+* 🌐 **Powered by OpenWeatherMap**
+  Ensures accurate and up-to-date information globally.
 
-Weather data is displayed on a clean and responsive interface.
+* 📷 **Dynamic Icons**
+  Weather condition icons load automatically from OpenWeatherMap’s API.
 
-🔧 Technologies Used
-Java & Android SDK
+---
 
-Google Play Services – FusedLocationProviderClient
+## 🧰 Tech Stack
 
-Volley (HTTP networking)
+* **Language:** Java
+* **SDK:** Android SDK
+* **Location Services:** Google Play Services (FusedLocationProviderClient)
+* **Networking:** Volley
+* **Image Loading:** Glide
+* **Weather API:** [OpenWeatherMap](https://openweathermap.org/api)
 
-Glide (Image loading)
+---
 
-OpenWeatherMap API
+## 📸 Screenshots
 
-🛠️ Requirements
-Android 5.0 (API 21) or higher
+| Current Location                          | City Search                                  |
+| ----------------------------------------- | -------------------------------------------- |
+| ![Screenshot 1](screenshots/location.png) | ![Screenshot 2](screenshots/city_search.png) |
 
-Internet connection
+---
 
-Location permission (for automatic detection)
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/weathernow.git
+cd weathernow
+```
+
+### 2. Open in Android Studio
+
+* Open Android Studio
+* Select **"Open an existing project"**
+* Navigate to the `weathernow` folder
+
+### 3. Get an API Key
+
+* Sign up at [OpenWeatherMap](https://openweathermap.org/api)
+* Replace the `API_KEY` in `MainActivity.java` with your key:
+
+```java
+private static final String API_KEY = "YOUR_API_KEY_HERE";
+```
+
+### 4. Build and Run
+
+* Make sure your device or emulator has Internet and Location access
+* Run the app!
+
+---
+
+## 🔐 Permissions Used
+
+* `ACCESS_FINE_LOCATION` – To detect your location
+* `INTERNET` – To fetch data from OpenWeatherMap
+
+---
+
+## 🙋 FAQ
+
+**Q: What happens if location permission is denied?**
+A: You can still search for any city's weather manually.
+
+**Q: How frequently is the weather updated?**
+A: The app fetches the latest data on each search or app open.
+
+---
+
+## 📄 License
+
+MIT License. See `LICENSE` for details.
+
+---
+
+Let me know if you want this README exported to a file or customized with your app icon and screenshots.
