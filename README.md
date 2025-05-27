@@ -2,8 +2,6 @@
 
 WeatherNow is a simple and clean Android application that displays real-time weather information based on your current location or a city of your choice. It uses the OpenWeatherMap API to fetch accurate weather details like **temperature**, **humidity**, and **wind speed**, along with dynamic weather icons.
 
-![WeatherNow Screenshot](screenshot.png) <!-- Replace with your screenshot -->
-
 ---
 
 ## 📱 Features
@@ -44,7 +42,7 @@ WeatherNow is a simple and clean Android application that displays real-time wea
 
 | Current Location                          | City Search                                  |
 | ----------------------------------------- | -------------------------------------------- |
-| ![Screenshot 1](screenshots/location.png) | ![Screenshot 2](screenshots/city_search.png) |
+| ![Screenshot 1](weather-Pune.jpeg) | ![Screenshot 2](weather-London.jpeg) |
 
 ---
 
